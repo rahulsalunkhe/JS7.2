@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Row's disabling</title>
+</head>
+<body>
+<table border="1px">
+	<tr>
+		<td id="row1">row 1</td>
+	</tr>
+	<tr>
+		<td id="row2">row 2</td>
+	</tr>
+	<tr>
+		<td id="row3">row 3</td>
+	</tr>
+	<tr>
+		<td id="row4">row 4</td>
+	</tr>
+	<tr>
+		<td id="row5">row 5</td>
+	</tr>
+</table>
+<input type="button" name="hideRows" value="Hide Odd Rows" style="margin-top:5px;" onclick="hideRows();">
+<input type="button" name="showRows" value="Unhide odd Rows" onclick="showRows();">
+<script type="text/javascript">
+function hideRows()
+{
+		document.getElementById('row1').style.display = " none";
+		document.getElementById('row3').style.display = " none";
+		document.getElementById('row5').style.display = " none";
+}	
+function showRows()
+{
+		document.getElementById('row1').style.display = " block";	
+		document.getElementById('row3').style.display = " block";
+		document.getElementById('row5').style.display = " block";	
+}
+</script>
+</body>
+</html>
